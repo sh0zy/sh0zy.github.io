@@ -17,6 +17,8 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+  // 同居している別アプリ(早稲田ルート)はこのSWのキャッシュ対象外
+  if (new URL(event.request.url).pathname.startsWith('/waseda-route/')) return;
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;
