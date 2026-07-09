@@ -1,0 +1,17 @@
+{
+  "name": "経営学 四択ノート",
+  "short_name": "経営学4択",
+  "description": "経営学の授業資料448問をすべて収録した4択テスト対策アプリ",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f3ecdf",
+  "theme_color": "#12233f",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
